@@ -13,7 +13,7 @@ router.post('/',
     check('firstName' , 'First Name is requierd').not().isEmpty(),
     check('lastName' , 'Last Name is requierd').not().isEmpty(),
     check('email','Please enter a valid Email').isEmail(),
-    check('password','Please enter a password with 6 charactters').isLength({min:6})
+    check('password','Please enter a password with 6 charactters').isLength({min: 6})
 
 ]
 , async (req,res)=>{
@@ -62,11 +62,6 @@ router.post('/',
             res.json({token})
            }
             )
-            /* config.get('jwtSecret'),
-            {expiresIn: 36000},
-            (err,token)=>{
-                if (err) throw err;
-                res.json({token}) */
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server error')

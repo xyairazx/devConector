@@ -7,6 +7,8 @@ const { check, validationResult } = require("express-validator");
 
 const ProfileModel = require("../../models/Profile");
 const UserModel = require("../../models/User");
+const PostModel = require("../../models/Post");
+
 
 router.get("/me", auth, async (req, res) => {
   try {
@@ -179,6 +181,25 @@ router.put('/experience',
     }
   }
 );
+
+
+router.delete('/', auth, async (req, res) => {
+  try {
+    // Remove user posts
+    await PostModel.deleteMany({ user: req.user.id });
+    // Remove profile
+    await ProfileModel.findOneAndRemove({ user: req.user.id });
+    // Remove user
+    await UserModel.findOneAndRemove({ _id: req.user.id });
+
+    res.json({ msg: 'User deleted' });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
+
 
 router.delete("/experience/:exp_id", auth,async (req, res) => {
     try {
