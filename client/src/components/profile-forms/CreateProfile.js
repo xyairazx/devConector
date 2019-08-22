@@ -47,7 +47,6 @@ const CreateProfile = ({
   const onSubmit = e => {
     e.preventDefault()
     createProfile(formData, history)
-    console.log(formData);
   };
 
   useEffect(() => {
