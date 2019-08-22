@@ -4,14 +4,14 @@
   "description": "social network for developers",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server",
+    "server": "node server",
     "start": "nodemon start",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Yair Azaria",
-  "license": "ISC",
+  "license": "MOT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.1.0",
