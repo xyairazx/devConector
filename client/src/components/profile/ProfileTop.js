@@ -19,7 +19,7 @@ const ProfileTop = ({
         {status} {company && <span> at {company}</span>}
       </p>
       <p>
-        {location} {location && <span> at {location}</span>}
+         {location && <span> at {location}</span>}
       </p>
       <div className="icons my-1">
         {website && (
