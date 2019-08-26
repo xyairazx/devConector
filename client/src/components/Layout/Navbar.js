@@ -34,7 +34,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <ul>
       <li>
       <Link to="/profiles">
-          Profiels
+          Profiles
       </Link>
       </li>
     <li>
