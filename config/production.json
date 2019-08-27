@@ -1,7 +1,6 @@
 {
-    "mongoURI": "mongodb+srv://yair12:yair12@devconector-zfloj.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubClientId":"1b0127f1880c9a08fb59",
-    "githubSecret":"b144776c2652d5e4925da594620122040649b3d2"
+    "mongoURI": "Your_mongoURI",
+    "jwtSecret": "Your_jwtSecret",
+    "githubClientId":"Your_githubClientId",
+    "githubSecret":"Your_githubSecret"
 }
-
