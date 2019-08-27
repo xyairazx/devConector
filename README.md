@@ -1,5 +1,5 @@
 # Social-Network-For-Developers
-MERN Stack Front To Back Full Stack React, Redux &amp; Node.js -
+MERN Stack Front To Back Full Stack React, Redux &amp; Node.js 
 
 
 
