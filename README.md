@@ -24,7 +24,7 @@ npm run client
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-You will need to change the default.json in the server config folder with
+You will need to change the default.json in the server config folder
 
 ```
 {
